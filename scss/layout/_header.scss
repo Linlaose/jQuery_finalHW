@@ -1,0 +1,94 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.fanpage-list{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 13px;
+  background-color: #f6f6f6;
+}
+.fanpage-item{
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 0px;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    &:hover{
+      opacity: .8;
+    }
+    span{
+      padding-left: 3px;
+    }
+  }
+  .facebook-link{
+    margin-right: 8px;
+    padding-right: 8px;
+    border-right: 1px solid #cccccc;
+    color: #4460a0;
+  }
+  .twitter-link{
+    color: #00aaec;
+  }
+}
+
+.headerBox{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 21px;
+}
+
+.logo-header{
+  padding: 8px 0 7px;
+}
+
+h1 {
+  a {
+    font-family: $fontFamily;
+    @include text-to-img("../../images/img-header.png", 170px, 36px);
+  }
+}
+
+.menuBox{
+  display: flex;
+  align-items: flex-end;
+}
+.menu-list{
+  display: flex;
+}
+.menu-item{
+  margin-left: 23px;
+  a{
+    color: #00cc99;
+    padding: 0 10px 17px 10px;
+    border-bottom: 3px solid transparent;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    &:hover{
+      border-bottom: 3px solid #00cc99;
+    }
+  }
+  .menu-active {
+    border-bottom: 3px solid #00cc99;
+  }
+}
+
+// 下拉式選單樣式
+.menu-hidden{
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  a{
+    padding-top: 17px;
+    &:hover{
+      background: #00cc99;
+      color: #fff;
+    }
+  }
+}
+.menu-show{
+  max-height: 100%;
+}

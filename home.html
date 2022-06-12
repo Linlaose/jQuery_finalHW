@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>jQuery-FinalHW</title>
+
+  <link rel="shortcut icon" href="./images/Mylogo.ico" />
+  <meta name="description" content="六角學院， jQuery 最終作業， lightBox 應用與 Swiper 輪播。" />
+
+  <meta property="og:title" content="FB的標題" />
+  <meta property="og:description" content="FB的描述" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="FB上的網址" />
+  <meta property="og:image" content="FB的圖片" />
+
+  <link href="圖片路徑" rel="apple-touch-icon" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <link rel="stylesheet" href="./css/all.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://kit.fontawesome.com/bf3cb62f9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="outerWrap">
+    <!-- OuterWrap -->
+    <ul class="fanpage-list">
+      <!-- fanpage -->
+      <li class="fanpage-item">
+        <a href="https://www.facebook.com/hexschool/" class="facebook-link">
+          <img src="./images/facebook-BG-none.png" alt="facebook">
+          <span>粉絲團</span>
+        </a>
+      </li>
+      <li class="fanpage-item">
+        <a href="https://twitter.com/hexschool1" class="twitter-link">
+          <img src="./images/twitter.png" alt="twitter">
+          <span>追隨我們</span>
+        </a>
+      </li>
+    </ul>
+    <!-- fanpage end -->
+    <header>
+      <!-- header -->
+      <div class="headerBox">
+        <!-- headerBox -->
+        <div class="logo-header">
+          <!-- logo-header -->
+          <h1>
+            <a href="https://www.hexschool.com/" target="_blank" title="六角學院">Hex School</a>
+          </h1>
+        </div>
+        <!-- logo-header end -->
+        <nav class="menuBox">
+          <!-- menuBox -->
+          <ul class="menu-list">
+            <li class="menu-item"><a href="#">首頁</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-product">產品介紹</a>
+              <ul class="menu-hidden">
+                <li>
+                  <a href="#HTML5">Html 5 基礎教學</a>
+                </li>
+                <li>
+                  <a href="#RWD">響應式網站設計</a>
+                </li>
+                <li>
+                  <a href="#jQuery">jQuery 實戰教學</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">聯絡我們</a></li>
+          </ul>
+        </nav>
+        <!-- menuBox end -->
+      </div>
+      <!-- headerBox end -->
+    </header>
+    <!-- header end -->
+    <div class="bannerArea">
+      <!-- bannerArea -->
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-1">
+            <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+          </div>
+          <div class="swiper-slide swiper-2">
+            <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+          </div>
+          <div class="swiper-slide swiper-3">
+            <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- bannerArea end -->
+    <main>
+      <!-- main -->
+      <div class="mainWrap">
+        <!-- mainWrap -->
+        <div class="introduction">
+          <!-- introduction -->
+          <ul class="courses-list">
+            <!-- courses-list -->
+            <li class="course-item">
+              <ul class="HTML5-list" id="HTML5">
+                <!-- HTML5-list -->
+                <li class="HTML5-item">
+                  <div>
+                    <a class="example-image-link" href="./images/HTML5-BG-none-2x.png" data-lightbox="example-1" data-title="Html 5 基礎教學"><img class="example-image" src="./images/HTML5-BG-none.png" alt="image-1" /></a>
+                  </div>
+                </li>
+                <li class="HTML5-item">
+                  <h4>Html 5 基礎教學</h4>
+                </li>
+                <li class="HTML5-item">
+                  <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                </li>
+              </ul>
+              <!-- HTML5-list end -->
+            </li>
+            <li class="course-item">
+              <ul class="RWD-list" id="RWD">
+                <!-- RWD-list -->
+                <li class="RWD-item">
+                  <div>
+                    <a class="example-image-link" href="./images/RWD-BG-none-2x.png" data-lightbox="example-1" data-title="RWD 響應式網站設計"><img class="example-image" src="./images/RWD-BG-none.png" alt="image-1" /></a>
+                  </div>
+                </li>
+                <li class="RWD-item">
+                  <h4>響應式網站設計</h4>
+                </li>
+                <li class="RWD-item">
+                  <p>響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+                </li>
+              </ul>
+              <!-- RWD-list end -->
+            </li>
+            <li class="course-item">
+              <ul class="jQuery-list" id="jQuery">
+                <!-- jQuery-list -->
+                <li class="jQuery-item">
+                  <div>
+                    <a class="example-image-link" href="./images/jQuery-BG-none-2x.png" data-lightbox="example-1" data-title="jQuery 實戰教學"><img class="example-image" src="./images/jQuery-BG-none.png" alt="image-1" /></a>
+                  </div>
+                </li>
+                <li class="jQuery-item">
+                  <h4>jQuery 實戰教學</h4>
+                </li>
+                <li>
+                  <ul class="jQuery-course-specifics-list">
+                    <!-- jQuery-course-specifics-list -->
+                    <p>本課程有以下特色</p>
+                    <li class="jQuery-course-specifics-item">了解變數的使用方法</li>
+                    <li class="jQuery-course-specifics-item">學習並操作 DOM</li>
+                    <li class="jQuery-course-specifics-item">學習基本數學運算方法</li>
+                    <li class="jQuery-course-specifics-item">套件的操作及運用</li>
+                  </ul>
+                  <!-- jQuery-course-specifics-list end -->
+                </li>
+              </ul>
+              <!-- jQuery-list end -->
+            </li>
+          </ul>
+          <!-- courses-list end -->
+        </div>
+        <!-- introduction end -->
+        <div class="tableArea">
+          <!-- tableArea -->
+          <div class="table-title">
+            <!-- table-title -->
+            <h4>線上及實體課程的差異</h4>
+          </div>
+          <!-- table-title end -->
+          <table>
+            <!-- table -->
+            <tr>
+              <th>項目</th>
+              <th>Hex School</th>
+              <th>一般線上課程</th>
+              <th>實體課程</th>
+            </tr>
+            <tr>
+              <td>費用</td>
+              <td><mark>較低</mark></td>
+              <td><mark>較低</mark></td>
+              <td>較高</td>
+            </tr>
+            <tr>
+              <td>學習效果</td>
+              <td>一般</td>
+              <td><mark>較低</mark></td>
+              <td><mark>很好</mark></td>
+            </tr>
+            <tr>
+              <td>Code review</td>
+              <td><mark>有</mark></td>
+              <td>無</td>
+              <td>不一定</td>
+            </tr>
+            <tr>
+              <td>課程更新速度</td>
+              <td><mark>普通</mark></td>
+              <td><mark>普通</mark></td>
+              <td>較慢</td>
+            </tr>
+            <tr>
+              <td>多次複習</td>
+              <td><mark>可</mark></td>
+              <td>可</td>
+              <td>不可</td>
+            </tr>
+            <tr>
+              <td>字幕</td>
+              <td><mark>有</mark></td>
+              <td>不一定</td>
+              <td>板書</td>
+            </tr>
+          </table>
+          <!-- table end -->
+        </div>
+        <!-- tableArea end -->
+        <div class="formArea">
+          <!-- formArea -->
+          <div class="form-title">
+            <!-- form-title -->
+            <h4>對我們課程有興趣嗎 ?<br>歡迎留下您的資料</h4>
+          </div>
+          <!-- form-title end -->
+          <div class="contact-info">
+            <!-- contact-info -->
+            <div class="text">
+              <!-- text -->
+              <textarea></textarea>
+            </div>
+            <!-- text end -->
+            <form action="home.html">
+              <!-- form -->
+              <label for="person">姓名</label>
+              <input type="text" name="person" id="person" placeholder="六角講師">
+              <label for="mobile">電話</label>
+              <input type="tel" name="mobile" id="mobile" placeholder="0912345678">
+              <label for="mail-box">信箱</label>
+              <input type="email" name="mail-box" id="mail-box" placeholder="hexschool@mail.com">
+              <div class="btn-submit">
+                <!-- btn-submit -->
+                <input type="submit" value="送出">
+              </div>
+              <!-- btn-submit end -->
+            </form>
+            <!-- form end -->
+          </div>
+          <!-- contact-info end -->
+        </div>
+        <!-- formArea end -->
+      </div>
+      <!-- mainWrap end -->
+    </main>
+    <!-- main end -->
+    <footer>
+      <!-- footer -->
+      <div class="footerBox">
+        <!-- footerBox -->
+        <div class="logo-footer">
+          <!-- logo-footer -->
+          <h3>
+            <a href="https://www.hexschool.com/" target="_blank">Hex School</a>
+          </h3>
+        </div>
+        <!-- logo-footer end -->
+        <div class="contact-us">
+          <!-- contact-us -->
+          <p class="mailto">聯絡我們：
+            <a href="mailto:hexschool@gmail.com">
+              <mark>hexschool@gmail.com</mark>
+            </a>
+          </p>
+          <p class="tel">電話：
+            <a href="tel:+0900123456">
+              <mark>0900123456</mark>
+            </a>
+          </p>
+        </div>
+        <!-- contact-us end -->
+      </div>
+      <!-- footerBox end -->
+    </footer>
+    <!-- footer end -->
+    <div class="goTop">
+      <!-- goTop -->
+      <a href="#">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+      </a>
+    </div>
+    <!-- goTop end -->
+  </div>
+  <!-- outerWrap end -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/lightbox.js"></script>
+  <script src="./js/all.js"></script>
+</body>
+</html>

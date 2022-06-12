@@ -1,0 +1,34 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.footerBox{
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 15px 35px 21px;
+  h3{
+    a{
+      font-family: $fontFamily;
+      @include text-to-img("../../images/img-footer.png", 170px, 36px)
+    }
+    background-image: url();
+  }
+  .contact-us{
+    p{
+      display: flex;
+      font-size: $fontSize;
+    }
+    .mailto{
+      padding-top: 3px;
+    }
+    .tel{
+      padding-top: 10px;
+    }
+    mark{
+      color: #e12d80;
+      background: none;
+      &:hover{
+        border-bottom: 1px solid #e12d80;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.bannerArea{
+  // background: url(../../images/banner.png) no-repeat;
+  // background-size: cover;
+  // background-position: 100%;
+  h2{
+    padding: 40px 0 39px 23px;
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 1.5;
+    background-color: #21211f59;
+  }
+  .swiper{
+    width: 1000px;
+    height: 346px;
+  }
+  .swiper-1{
+    max-width: 1000px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../../images/banner.png) no-repeat;
+  }
+  .swiper-2{
+    max-width: 1000px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../../images/swiper-2.png) no-repeat;
+  }
+  .swiper-3{
+    max-width: 1000px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../../images/swiper-3.png) no-repeat;
+  }
+}

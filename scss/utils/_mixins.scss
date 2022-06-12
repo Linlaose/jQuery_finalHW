@@ -1,0 +1,10 @@
+// 圖片取代文字
+@mixin text-to-img($image-path,$width,$height){
+  display: block;
+  width: $width;
+  height: $height;
+  background: url($image-path) no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
