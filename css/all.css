@@ -124,7 +124,7 @@ h1 a {
   display: block;
   width: 170px;
   height: 36px;
-  background: url("../../images/img-header.png") no-repeat;
+  background: url("../images/img-header.png") no-repeat;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
@@ -199,7 +199,7 @@ h1 a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../images/banner.png) no-repeat;
+  background: url(../images/banner.png) no-repeat;
 }
 
 .bannerArea .swiper-2 {
@@ -208,7 +208,7 @@ h1 a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../images/swiper-2.png) no-repeat;
+  background: url(../images/swiper-2.png) no-repeat;
 }
 
 .bannerArea .swiper-3 {
@@ -217,7 +217,7 @@ h1 a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../images/swiper-3.png) no-repeat;
+  background: url(../images/swiper-3.png) no-repeat;
 }
 
 .footerBox {
@@ -235,7 +235,7 @@ h1 a {
   display: block;
   width: 170px;
   height: 36px;
-  background: url("../../images/img-footer.png") no-repeat;
+  background: url("../images/img-footer.png") no-repeat;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;

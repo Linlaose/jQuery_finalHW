@@ -46,7 +46,7 @@
 h1 {
   a {
     font-family: $fontFamily;
-    @include text-to-img("../../images/img-header.png", 170px, 36px);
+    @include text-to-img("../images/img-header.png", 170px, 36px);
   }
 }
 

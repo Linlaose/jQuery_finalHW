@@ -8,7 +8,7 @@
   h3{
     a{
       font-family: $fontFamily;
-      @include text-to-img("../../images/img-footer.png", 170px, 36px)
+      @include text-to-img("../images/img-footer.png", 170px, 36px)
     }
     background-image: url();
   }
